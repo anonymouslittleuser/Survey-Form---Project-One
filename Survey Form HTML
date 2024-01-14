@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    
+    <form id="survey-form" class="pure-form">
+        
+    
+        <label for="name" id="name-label">Enter your First Name: 
+            <input id="name" type="text" name="name" placeholder="First Name" required>
+        </label>
+
+        
+        <label for="last-name" id="last-name-label">Enter your Last Name: 
+            <input id="last-name" type="text" name="last-name" placeholder="Last Name" required>
+        </label>
+
+        
+        <label for="number" id="number-label">Enter your Age: 
+            <input id="number" type="number" min="0" max="130" placeholder="Age" name="age" required>
+        </label>
+
+        
+        <label for="email" id="email-label">Enter your Email: 
+            <input id="email" type="email" name="email" placeholder="Email" required>
+        </label>
+
+        
+        <label for="new-password" id="password-label">Create a New Password: 
+            <input id="new-password" type="password" placeholder="Password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+        </label>
+
+       
+        <legend>Confirm password</legend>
+        <label for="password">Password: 
+            <input type="password" placeholder="Password" id="password" required>
+        </label>
+        <label for="confirm_password">Confirm Password: 
+            <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+        </label>
+
+        
+        <label for="favourite-number" id="number-fav-label">What is your favourite number? 
+            <input id="favourite-number" type="number" min="0" name="favourite-number" placeholder="Favourite Number" required>
+        </label>
+
+        
+        <p>Do you like chocolate?</p>
+        <label for="yes"><input type="radio" name="chocolate" id="yes" checked class="inline" value="Yes"/> Yes</label>
+        <label for="no"><input type="radio" name="chocolate" id="no" class="inline" value="No"/> No</label>
+
+        
+        <label for="mythical-creature" id="mythical-creature-label">We would love to know more about you! Which mythical creature from the options below best describe you?
+            <select id="dropdown" name="mythical-creature">
+                <option value="">(Select one)</option>
+                <option value="Unicorn">Unicorn</option>
+                <option value="Warewolf">Warewolf</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Goblin">Goblin</option>
+                <option value="fairy">Fairy</option>
+            </select>
+        </label>
+
+        
+        <label for="songs" id="songs-label">What are your top five favourite songs? 
+            <textarea id="songs" rows="3" cols="30" placeholder="Please write your favourite songs here" name="songs"></textarea>
+        </label>
+
+       
+        <legend>What is your favourite social media platform?</legend>
+        <label><input type="checkbox" id="instagram" name="source" value="Instagram">Instagram</label>
+        <label><input type="checkbox" id="tiktok" name="source" value="TikTok">TikTok</label>
+        <label><input type="checkbox" id="x" name="source" value="X">X</label>
+        <label><input type="checkbox" id="reddit" name="source" value="Reddit">Reddit</label>
+        <label><input type="checkbox" id="youtube" name="source" value="YouTube">YouTube</label>
+        <label><input type="checkbox" id="other" name="source" value="Other">Other (please specify below)</label>
+        <textarea id="other-text" rows="3" cols="30" placeholder="Other" name="social-media"></textarea>
+
+       
+        <button type="submit" class="pure-button pure-button-primary" id="submit">Submit</button>
+    </form>
+</body>
+</html>
